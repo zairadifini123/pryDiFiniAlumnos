@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlumnos));
             lblNombre = new Label();
             txtNombre = new TextBox();
             lblDatos = new Label();
@@ -37,6 +38,7 @@
             btnAceptar = new Button();
             btnSalir = new Button();
             txtEdad = new TextBox();
+            lblResultados = new Label();
             SuspendLayout();
             // 
             // lblNombre
@@ -102,6 +104,7 @@
             btnAceptar.TabIndex = 7;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnSalir
             // 
@@ -111,7 +114,7 @@
             btnSalir.TabIndex = 8;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += this.btnSalir_Click;
+            btnSalir.Click += btnSalir_Click;
             // 
             // txtEdad
             // 
@@ -121,11 +124,21 @@
             txtEdad.TabIndex = 9;
             txtEdad.KeyPress += txtEdad_KeyPress;
             // 
+            // lblResultados
+            // 
+            lblResultados.AutoSize = true;
+            lblResultados.Location = new Point(36, 378);
+            lblResultados.Name = "lblResultados";
+            lblResultados.Size = new Size(64, 15);
+            lblResultados.TabIndex = 10;
+            lblResultados.Text = "Resultados";
+            // 
             // frmAlumnos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(338, 482);
+            Controls.Add(lblResultados);
             Controls.Add(txtEdad);
             Controls.Add(btnSalir);
             Controls.Add(btnAceptar);
@@ -136,6 +149,7 @@
             Controls.Add(txtNombre);
             Controls.Add(lblNombre);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAlumnos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAlumnos";
@@ -154,5 +168,6 @@
         private Button btnAceptar;
         private Button btnSalir;
         private TextBox txtEdad;
+        private Label lblResultados;
     }
 }
