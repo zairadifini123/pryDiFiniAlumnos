@@ -1,6 +1,6 @@
 ﻿namespace pryDiFiniPromedios
 {
-    partial class Form1
+    partial class frmPromedios
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // frmPromedios
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Name = "frmPromedios";
+            Text = "frmPromedio";
+            ResumeLayout(false);
         }
 
         #endregion

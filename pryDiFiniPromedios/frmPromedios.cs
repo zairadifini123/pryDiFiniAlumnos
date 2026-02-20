@@ -1,8 +1,8 @@
 namespace pryDiFiniPromedios
 {
-    public partial class Form1 : Form
+    public partial class frmPromedios : Form
     {
-        public Form1()
+        public frmPromedios()
         {
             InitializeComponent();
         }
